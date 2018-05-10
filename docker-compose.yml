@@ -1,0 +1,11 @@
+
+  datalab:
+    image: gcr.io/cloud-datalab/datalab:local-20180214
+    hostname: datalab
+    volumes:
+    - ./ml/cc/:/content
+    restart: always
+    ports:
+    - 127.0.0.1:8081:8080
+
+
